@@ -1,0 +1,15 @@
+{
+    "categories": {
+        "0": "analytics",
+        "1": "media",
+        "2": "health & fitness",
+        "3": "technical"
+    },
+    "demo_page": "https://vision-35268.bubbleapps.io/version-test/",
+    "description": "Chat GPT-4 Vision APIプラグインは、Bubble.ioのアプリケーションで直感的な画像認識機能を簡単に統合できるツールです。このプラグインを使用すると、ユーザーはアップロードした画像に関する質問を入力するだけで、Chat GPT-4の強力な画像解析能力を利用して詳細な答えを得ることができます。ユーザー体験を向上させ、アプリケーションに対話式の画像分析機能を追加することが可能です。\n\n----------------------------------------------------------\n\nThe Chat GPT-4 Vision API plugin allows seamless integration of intuitive image recognition capabilities into your Bubble.io applications. With this plugin, users can simply upload an image and enter a question regarding it to leverage the powerful image analysis capabilities of Chat GPT-4 to receive detailed responses. Enhance user experience by adding conversational image analysis features to your application.\n",
+    "image": "//meta-q.cdn.bubble.io/f1699460278832x866992901601593300/openai-logomark.png",
+    "license": "open_source",
+    "link": "https://platform.openai.com/docs/guides/vision",
+    "name": "GPT-4 Vision( Image recognition )",
+    "plugin_instructions": "①プラグインをBubbleアプリに追加します。\n②ヘッダーのAuthorizationにAPIキーを入力します。\n※APIキーの前にBearer を追加してください\n③画像アップロード機能をユーザーインターフェースに組み込みます。\n④質問入力フィールドを配置し、ユーザーが対話できるようにします。\n⑤プラグインのアクションに画像URLと質問入力フィールドを連携します。\n⑥アクションの実行後、APIの結果をユーザーに表示できます。\n\n----------------------------------------------------------\n\n\nSure, here is the translated text:\n\n①Add the plugin to your Bubble app.\n②Enter your API key in the Authorization header of the request. Please prepend the API key with \"Bearer\".\n③Incorporate the image upload feature into your user interface.\n④Place a question input field to facilitate user interaction.\n⑤Link the image　URL and question input field to the plugin's action.\n⑥After executing the action, the results from the API can be displayed to the user."
+}

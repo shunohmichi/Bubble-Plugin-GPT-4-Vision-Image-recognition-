@@ -1,0 +1,53 @@
+{
+    "auth": "private_key_header",
+    "calls": {
+        "AAC": {
+            "body": "{\n    \"model\": \"gpt-4-vision-preview\",\n    \"messages\": [\n      {\n        \"role\": \"user\",\n        \"content\": [\n          {\n            \"type\": \"text\",\n            \"text\": \"<text>\"\n          },\n          {\n            \"type\": \"image_url\",\n            \"image_url\": {\n              \"url\": \"<image_URL>\"\n            }\n          }\n        ]\n      }\n    ],\n    \"max_tokens\": <max_tokens>\n  }",
+            "body_params": {
+                "AAF": {
+                    "key": "image_URL",
+                    "private": true,
+                    "value": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Gfp-wisconsin-madison-the-nature-boardwalk.jpg/2560px-Gfp-wisconsin-madison-the-nature-boardwalk.jpg"
+                },
+                "AAG": {
+                    "key": "text",
+                    "private": true,
+                    "value": "What’s in this image?"
+                },
+                "AAH": {
+                    "doc": "https://platform.openai.com/docs/guides/vision/calculating-costs",
+                    "key": "max_tokens",
+                    "private": true,
+                    "value": "300"
+                }
+            },
+            "doc_link": "https://platform.openai.com/docs/guides/vision",
+            "headers": {
+                "AAE": {
+                    "key": "Content-Type",
+                    "private": true,
+                    "value": "application/json",
+                    "visibility": "hidden"
+                }
+            },
+            "initialized": true,
+            "method": "post",
+            "name": "Vision API",
+            "publish_as": "action",
+            "rank": 0,
+            "ret_value": "api.1699460100564x151270881093746700.plugin_api.AAC",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AAC\":{\"caption\":\"Vision API\",\"fields\":{\"_p_id\":{\"ret_value\":\"text\",\"caption\":\"id\",\"sample_value\":\"chatcmpl-8MFgf9S8CXSz3iTXwmL08ituaCwsX\",\"path\":[\"id\"]},\"_p_object\":{\"ret_value\":\"text\",\"caption\":\"object\",\"sample_value\":\"chat.completion\",\"path\":[\"object\"]},\"_p_created\":{\"ret_value\":\"number\",\"caption\":\"created\",\"sample_value\":1700314209,\"path\":[\"created\"]},\"_p_model\":{\"ret_value\":\"text\",\"caption\":\"model\",\"sample_value\":\"gpt-4-1106-vision-preview\",\"path\":[\"model\"]},\"_p_usage.prompt_tokens\":{\"ret_value\":\"number\",\"caption\":\"usage prompt_tokens\",\"sample_value\":1118,\"path\":[\"usage\",\"prompt_tokens\"]},\"_p_usage.completion_tokens\":{\"ret_value\":\"number\",\"caption\":\"usage completion_tokens\",\"sample_value\":109,\"path\":[\"usage\",\"completion_tokens\"]},\"_p_usage.total_tokens\":{\"ret_value\":\"number\",\"caption\":\"usage total_tokens\",\"sample_value\":1227,\"path\":[\"usage\",\"total_tokens\"]},\"_p_choices\":{\"ret_value\":\"list.api.1699460100564x151270881093746700.plugin_api.AAC.choices\",\"caption\":\"choices\",\"path\":[\"choices\"]}}},\"plugin_api.AAC.choices\":{\"caption\":\"Vision API choice\",\"fields\":{\"_p_message.role\":{\"ret_value\":\"text\",\"caption\":\"message role\",\"sample_value\":\"assistant\",\"path\":[\"message\",\"role\"]},\"_p_message.content\":{\"ret_value\":\"text\",\"caption\":\"message content\",\"sample_value\":\"The image shows a scenic natural landscape with a wooden boardwalk running through a lush green field. The boardwalk serves as a path for pedestrians, allowing them to walk through the area without disturbing the grass and plants. The sky above is partly cloudy with a predominance of blue and some white clouds, suggesting it might be a fair weather day. In the distance, there are trees and shrubs, contributing to the diversity of vegetation in the scene. This setting appears peaceful and is likely a place for recreation, nature walks, or wildlife observation.\",\"path\":[\"message\",\"content\"]},\"_p_finish_details.type\":{\"ret_value\":\"text\",\"caption\":\"finish_details type\",\"sample_value\":\"stop\",\"path\":[\"finish_details\",\"type\"]},\"_p_finish_details.stop\":{\"ret_value\":\"text\",\"caption\":\"finish_details stop\",\"sample_value\":\"<|fim_suffix|>\",\"path\":[\"finish_details\",\"stop\"]},\"_p_index\":{\"ret_value\":\"number\",\"caption\":\"index\",\"sample_value\":0,\"path\":[\"index\"]}}}}",
+            "url": "https://api.openai.com/v1/chat/completions"
+        }
+    },
+    "human": "OpenAI-GPT-4",
+    "shared_headers": {
+        "AAD": {
+            "key": "",
+            "private": true,
+            "value": ""
+        }
+    },
+    "token_param_name": "Authorization"
+}
